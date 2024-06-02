@@ -1,11 +1,10 @@
 import "./app.css";
+import Layout from "./layout/layout";
 
 function App() {
   return (
     <>
-      <div>
-        <h1 className="text-[20px] text-blue-600">React + Redux + Thunk</h1>
-      </div>
+      <Layout />
     </>
   );
 }

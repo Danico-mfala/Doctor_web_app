@@ -1,3 +1,4 @@
+import { Routes, Route } from "react-router-dom";
 import Home from "../pages/Home";
 import Services from "../pages/Services";
 import Login from "../pages/Login";
@@ -6,7 +7,7 @@ import Contact from "../pages/Contact";
 import Doctors from "../pages/Doctors/Doctors";
 import DoctorsDetails from "../pages/Doctors/DoctorsDetails";
 
-import { Routes, Route } from "react-router-dom";
+// const NoPage = lazy(() => import("../pages/NoPage"));
 
 const Routers = () => {
   return (
@@ -19,6 +20,7 @@ const Routers = () => {
       <Route path="/register" element={<Signup />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/services" element={<Services />} />
+      {/* <Route path="*" element={<NoPage />} /> */}
     </Routes>
   );
 };
